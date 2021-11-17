@@ -29,9 +29,7 @@ h1 {    /*fuente de texto*/
     }
 h1 {    /*Alineacion de texto*/
     text-align: center;
-    text-indent: ;
-    text-decoration: ;
-    text-transform: ;
+
     }
 
 body{   /*fuente de texto*/
@@ -44,9 +42,7 @@ body{   /*fuente de texto*/
     }
 body{   /*Alineacion de texto*/
     text-align: left;
-    text-indent: ;
-    text-decoration: ;
-    text-transform: ;
+
     }
 
 h2 {    /*fuente de texto*/
@@ -59,9 +55,8 @@ h2 {    /*fuente de texto*/
     }
 h2 {    /*Alineacion de texto*/
     text-align: center;
-    text-indent: ;
     text-decoration: overline solid rgb(68, 68, 68);
-    text-transform: ;
+
     }
 
 
@@ -98,31 +93,39 @@ footer{
 
 .correo_Alvaro{
     text-decoration: line-through solid rgb(68, 68, 68);
-}
+
+    }
 
 .negrita{
     font-weight: 800;
+
     }
 
 .cursiva{
     font-style: italic;
+
     }
 
 .uppercase{
     text-transform: capitalize;
+
     }
 
 .interlineado{
     line-height : 25px;
+
     }
 
 .separacion_letras{
     letter-spacing: 2px;
+
     }
 
 .index{
     text-indent: 20px;
-    position: ;
     padding-left: 30px
+
     }
+
+
 
