@@ -15,53 +15,114 @@ word-spacing: ;
 line-height: ;
 white-space: ;
 */
-
-.H1 {
-    font-family: Bad Script;
-    font-size: ;
-    font-weight: ;
-    font-style: ;
-    font-variant: ;
-
-    }
-
-.body{
-    font-family: ;
-    font-size: ;
-    font-weight: ;
-    font-style: ;
-    font-variant: ;
-
-    }
-
 /*Google Fonts*/
-.article{
-    font-family: ;
-    font-size: ;
-    font-weight: ;
-    font-style: ;
-    font-variant: ;
+@import url('https://fonts.googleapis.com/css2?family=Asul&family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Tillana&display=swap');
+
+h1 {    /*fuente de texto*/
+    font-family: 'Tillana', cursive, 'Concert One', cursive;
+    font-size: 32px;
+    font-weight: 900;
+    font-style: normal;
+    font-variant: normal;
 
     }
+h1 {    /*Alineacion de texto*/
+    text-align: center;
+    text-indent: ;
+    text-decoration: ;
+    text-transform: ;
+    }
+
+body{   /*fuente de texto*/
+    font-family: 'Asul', sans-serif, 'Work Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+
+    }
+body{   /*Alineacion de texto*/
+    text-align: left;
+    text-indent: ;
+    text-decoration: ;
+    text-transform: ;
+    }
+
+h2 {    /*fuente de texto*/
+    font-family: 'Tillana', cursive, Garamond, serif;
+    font-size: 20px;
+    font-weight: 900;
+    font-style: normal;
+    font-variant: normal;
+
+    }
+h2 {    /*Alineacion de texto*/
+    text-align: center;
+    text-indent: ;
+    text-decoration: overline solid rgb(68, 68, 68);
+    text-transform: ;
+    }
+
+
 /* Con esta parte controlamos la parte de los enlaces.*/
 /* Enlace sin visitar */
+
 a:link {
+    font-family: 'Asul', sans-serif, 'Work Sans', sans-serif;
     color: blue;
     }
 
 /* Enlace  visitado */
 a:visited {
+    font-family: 'Asul', sans-serif, 'Work Sans', sans-serif;
     color: skyblue;
     }
 
 /* Raton sobre el enlace */
 a:hover {
+    font-family: 'Asul', sans-serif, 'Work Sans', sans-serif;
     color: red;
     }
 
 /* Mientras pinchas el enlace */
 a:active {
+    font-family: 'Asul', sans-serif, 'Work Sans', sans-serif;
     color: pink;
     }
 
+footer{
+    text-decoration: underline solid rgb(68, 68, 68);
+    text-shadow: -26px 6px 6px rgba(24,20,164,0.8);
+    }
+
+.correo_Alvaro{
+    text-decoration: line-through solid rgb(68, 68, 68);
+}
+
+.negrita{
+    font-weight: 800;
+    }
+
+.cursiva{
+    font-style: italic;
+    }
+
+.uppercase{
+    text-transform: capitalize;
+    }
+
+.interlineado{
+    line-height : 25px;
+    }
+
+.separacion_letras{
+    letter-spacing: 2px;
+    }
+
+.index{
+    text-indent: 20px;
+    position: ;
+    padding-left: 30px
+    }
 
