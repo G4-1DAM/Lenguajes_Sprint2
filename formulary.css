@@ -1,6 +1,6 @@
-<<<<<<< HEAD
 
-*{
+
+* {
 	margin: 0;
 	padding: 0;
 }
@@ -24,18 +24,34 @@ form {
 	background-color: #C9DCCC;
 	padding: 1em;
 	display: block;
-	width: 300px;
+	width: 350px;
 	
 }
 
-.form__name{
+.form__name {
 
 	/*border: 1px solid black;*/
-	margin-bottom: 0.5em;
 	font-weight: bold;
-	font-size: 1.5vw;
+	font-size: 2vw;
+	cursor: default;
 
 }
+
+.icon__imput {
+
+	margin-top: 5px;
+	margin-left: 25px;
+	/*border: 1px solid black;*/
+	display: -ms-flexbox;
+	width: 100%;
+	right: 0;
+	justify-content: space-between;
+		
+
+	/*margin-bottom: 15px;*/
+
+}
+
 
 .form__input {
 
@@ -43,38 +59,74 @@ form {
 	border-radius: 6px;
 	background-color: #E6E1E0;
 	padding: 0.5em;
-	display: block;
-	margin-left: 2em;
+	/*display: block;*/
+	/*margin-top: 0.5em;*/
+	/*margin-left: 2em;*/
 	margin-bottom: 1em;
+	transform: 0.5s;
+
+}.form__input:hover{
+
+	border: 2px solid black;
+	transform: scale(1.05);
 }
 
-span {
 
-	visibility: hiden;
-	margin: 1em;
-	width: 120px;
+/* ToolTip classses */ 
 
-}span:hover {
+.tooltip .tooltiptext {		/*Creacion contenedor y transparencia*/
 
-	visibility:  visible;
+    width: auto;
+    visibility: hidden;
+    opacity: 0;
+    font-style: italic;
+    background-color: #F769DF;
+    border-radius:5px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    position: absolute;
+    padding: 5px;
+    z-index: 1;
+    margin-top: 3px; 
+    margin-left: 10px;
+    transition: opacity 1s;
+
+}.tooltip .tooltiptext::after {				/*Efecto de delante del contendor*/
+
+  	content: "";
+  	position: absolute;
+  	top: 50%;
+  	right: 100%;
+  	margin-top: -7px;
+  	border-width: 7px;
+  	border-style: solid;
+  	border-color: transparent #F769DF transparent transparent;
+
+}.tooltip:hover .tooltiptext {	/*Para poder ver el contenedor*/
+    visibility: visible;
+    opacity: 1;
 }
 
 .div__bot {
 
 	/*border: 1px solid black;*/
 	display: flex;
-	margin:  auto;
-	width: 300px;
+	justify-content: space-between;
+	margin: auto;
+	width: auto;
+	height: auto;
 }
 
 .form__select {
 
 	/*border: 1px solid black;*/
-	border-radius: 6px;
 	border: 1px solid black;
+	border-radius: 6px;
 	background-color: #E6E1E0;
 	padding: 0.5em;
-	margin: auto;
+	/*display: block;*/
+	/*margin-right: auto;*/
+	cursor: pointer;
 
 }
 
@@ -85,14 +137,12 @@ button {
 	font-weight: bold;
 	font-style: default;
 	cursor:  pointer;
-	margin: auto;
+	/*display: block;*/
+	/*margin-left: auto;*/
 	transition: transform 1s;
 
-	}button:hover{
+}button:hover {
+	transform: scale(0.95);
+	background-color: white;
+}
 
-		transform: scale(0.95);
-		background-color: white;
-	}
-=======
-hola mundo
->>>>>>> 227c59ea9ea2cb44cbecf1c8bdca1435b8c1c06a
