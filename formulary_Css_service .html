@@ -5,6 +5,8 @@
  <head>
     <meta charset="UTF-8">
     <meta name="author" content="Antonio García Belver // Grupo 4">
+    <link rel="stylesheet" type="text/css" href="./formulary.css">
+
     <title>PCT4U</title>
  </head>
  <body>
@@ -47,22 +49,38 @@
 <!-- ********************************************************************************************************************************************** -->
 
     <form>
-        <fieldset>               <!-- Le mete un marco con relieve-->
-          <div>
+        <!-- <fieldset>                Le mete un marco con relieve -->
+      <div class="formulary">
 
-        <p><b>Nombre</b><input type="text" name="Nombre" maxlength="12"required></p>
-        <p><b>Apellidos</b><input type="text" name='Apellidos' maxlength="24"required></p>
-        <p><b>Teléfono</b><input type="tel" name="Teléfono" maxlength="9" required></p>
-        <p><b>Email</b><input type="text" name= 'Email' maxlength="30"required></p>
-        <p><b>Dispositivo</b><input type='text' name='Dispositivo'required></p>
-        <p><b>Avería</b><input type="text" name='Avería'required></p>
+        <p class="form__name">Nombre</p>
+        <input class="form__input" type="text" placeholder="Nombre" name="Nombre" maxlength="12"required><span>NOMBRE</span>
 
-      <br>
+        <p class="form__name">Apellidos</p>
+        <input class="form__input" type="text" placeholder="Apellidos" name='Apellidos' maxlength="24"required><span>APELLIDOS</span>
 
-      <button>Enviar datos</button>
+        <p class="form__name">Teléfono</p>
+        <input class="form__input" type="tel" placeholder="+34 ..." name="Teléfono" maxlength="9" required><span>TELEFONO</span>
 
+        <p class="form__name">Email</p>
+        <input class="form__input" type="Email" placeholder="example@mail" name= 'Email' maxlength="30"required><span>EMAIL</span>
+
+        <p class="form__name">Dispositivo</p>
+        <input class="form__input" type='text' placeholder="Ej: Xiaomi Mi9" name='Dispositivo'required>
+
+        <div class ="div__bot">
+          <select class="form__select" placeholder="Seleccione una">
+            <option disabled selected>Seleccione</option>
+            <option style="font-style: italic;">Pantalla</option>
+            <option style="font-style: italic;">Carga/Descarga</option>
+            <option style="font-style: italic;">Sonido</option>
+            <option style="font-style: italic;">Otros</option>
+          </select>
+
+          <button>Enviar datos</button>
         </div>
-      </fieldset>
+
+      </div>
+      <!-- </fieldset> -->
     </form>
 
 <!-- ********************************************************************************************************************************************** -->
