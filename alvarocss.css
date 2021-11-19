@@ -1,0 +1,132 @@
+/*CSS de Alvaro Martin Bazan*/
+/*Aqui he introducido un margen y pading 0 a todas las paginas*/
+@import url('https://fonts.googleapis.com/css2?family=Asul&family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Tillana&display=swap');
+*{
+  margin:0px;
+  padding:0px;
+}
+/*He puesto una class fondo para el body de about us y que tenga esta imagen*/
+/*Esta parte introduce un fondo con imagen al background*/
+
+/******************ALVARO ESTA MEZCLADO EN TODOS****************/
+body {
+  background-image: url("imagenFondo.jpg");
+  background-repeat:no-repeat;
+  background-size:100%;
+  background-attachment: fixed;
+  /*texto de************************* ARTSIOM **************************************/
+  font-family: 'Asul', sans-serif, 'Work Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  text-align: left;
+}
+h1 {    /*fuente de texto*/
+    font-family: 'Tillana', cursive, 'Concert One', cursive;
+    font-size: 20px;
+    font-weight: 900;
+    font-style: normal;
+    font-variant: normal;
+
+    }
+h1 {    /*Alineacion de texto*/
+    text-align: center;
+
+    }
+h2 {    /*fuente de texto*/
+        font-family: 'Tillana', cursive, Garamond, serif;
+        font-size: 20px;
+        font-weight: 900;
+        font-style: normal;
+        font-variant: normal;
+
+        }
+h2 {    /*Alineacion de texto*/
+        text-align: center;
+        /*text-decoration: overline solid rgb(68, 68, 68);*/
+
+        }
+        .correo_Alvaro{
+            text-decoration: line-through solid rgb(68, 68, 68);
+
+            }
+
+        .negrita{
+            font-weight: 800;
+
+            }
+
+        .cursiva{
+            font-style: italic;
+
+            }
+
+        .uppercase{
+            text-transform: capitalize;
+
+            }
+
+        .interlineado{
+            line-height : 25px;
+
+            }
+
+        .separacion_letras{
+            letter-spacing: 2px;
+
+            }
+
+        .index{
+            text-indent: 20px;
+            padding-left: 30px
+
+            }
+
+
+
+
+footer{
+  color: gold;
+  background-color: black;/*ALVARO*/
+  /*text-decoration: underline solid rgb(68, 68, 68);/*ARTSIOM*/
+  /*text-shadow: 0px 1px 1px rgba(24,20,164,0.8);*/
+  text-align: center;
+
+}
+table {
+  align-content: center;
+  border:1px;
+  -webkit-box-shadow: 0px -2px 15px 5px #000000;
+  box-shadow: 0px -2px 15px 5px #000000;
+
+}
+
+
+/***********ROBERTO******************************************/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 2%;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+}
+li {
+  padding:2%;
+  text-align: center;
+}
+li a {
+  color: gold;
+  text-decoration: none;
+
+}
+li:hover {
+  background-color: grey;
+}
+@media screen and (min-width: 600px) {
+li {
+  display: inline;
+}
+}
