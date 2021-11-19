@@ -7,8 +7,8 @@
 
 form {
 
-	/*border :1px solid black;*/
-	width: 100%;
+	border :1px solid black;
+	width: 95%;
 	height: auto;
 	padding: 1em;
 	margin-top: 20px;
@@ -24,7 +24,7 @@ form {
 	background-color: #C9DCCC;
 	padding: 1em;
 	display: block;
-	width: 350px;
+	width: 26vw;
 	
 }
 
@@ -32,7 +32,8 @@ form {
 
 	/*border: 1px solid black;*/
 	font-weight: bold;
-	font-size: 2vw;
+	font-size: 1.2vw;
+	min-width: 250px;
 	cursor: default;
 
 }
@@ -43,15 +44,11 @@ form {
 	margin-left: 25px;
 	/*border: 1px solid black;*/
 	display: -ms-flexbox;
-	width: 100%;
-	right: 0;
-	justify-content: space-between;
-		
-
-	/*margin-bottom: 15px;*/
+	width: 25vw;
+	margin-right: auto;
+	/*margin-bottom: 3px;*/
 
 }
-
 
 .form__input {
 
@@ -59,16 +56,16 @@ form {
 	border-radius: 6px;
 	background-color: #E6E1E0;
 	padding: 0.5em;
+	width: 20vw;
 	/*display: block;*/
 	/*margin-top: 0.5em;*/
 	/*margin-left: 2em;*/
+	margin-right: 1em;
 	margin-bottom: 1em;
-	transform: 0.5s;
 
 }.form__input:hover{
 
 	border: 2px solid black;
-	transform: scale(1.05);
 }
 
 
@@ -87,7 +84,7 @@ form {
     position: absolute;
     padding: 5px;
     z-index: 1;
-    margin-top: 3px; 
+    margin-top: 89px; 
     margin-left: 10px;
     transition: opacity 1s;
 
@@ -112,14 +109,16 @@ form {
 	/*border: 1px solid black;*/
 	display: flex;
 	justify-content: space-between;
-	margin: auto;
-	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	width: 25vw;
 	height: auto;
 }
 
 .form__select {
 
 	/*border: 1px solid black;*/
+	width: 12vw;
 	border: 1px solid black;
 	border-radius: 6px;
 	background-color: #E6E1E0;
@@ -127,18 +126,31 @@ form {
 	/*display: block;*/
 	/*margin-right: auto;*/
 	cursor: pointer;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
 
+}
+
+option {
+
+	font-style: italic;
 }
 
 button {
 
+	font-size: 1vw;
+	text-align: center;
+	width: 7vw;
+	max-width: 150px;
+	height: auto;
 	border: 1px solid black;
-	padding: 0.5em;
+	padding: 0.2em 0.5em;
 	font-weight: bold;
 	font-style: default;
 	cursor:  pointer;
 	/*display: block;*/
-	/*margin-left: auto;*/
+	margin-left: auto;
+	margin-top: 100px;
 	transition: transform 1s;
 
 }button:hover {
@@ -146,3 +158,126 @@ button {
 	background-color: white;
 }
 
+.but__del {
+
+	border: 1px solid black;
+	font-size: 1vw;
+	text-align: center;
+	width: 7vw;
+	max-width: 150px;
+	height: auto;
+	border: 1px solid black;
+	padding: 0.2em 0.5em;
+	font-weight: bold;
+	font-style: default;
+	cursor:  pointer;
+	/*display: block;*/
+	margin-left: 17vw;
+	margin-top: 5px;
+	transition: transform 1s;
+
+}.but__del:hover {
+
+	transform: scale(0.95);
+	background-color: white;
+}
+
+.div__sex {
+
+	/*border: 1px solid black;*/
+	border-top: 5px ridge;
+	border-bottom: 5px ridge;
+	width: 23vw;
+	padding: 0.5em;
+	margin-left: 0;
+	margin-bottom: 1em;
+}
+
+ul {
+
+	padding: 1em;
+	text-decoration: none;
+	list-style-type: none ;
+
+}
+
+ul > li {
+
+	padding: 0.2em;
+}
+
+ul > li > input {
+	
+	-webkit-appearance: none;
+  	-moz-appearance: none;
+  	appearance: none;
+  	border-radius: 50%;
+  	width: 16px;
+  	height: 16px;
+  	border: 2px solid #999;
+  	transition: 0.2s all linear;
+  	margin-right: 3px;
+  	position: relative;
+  	top: 1px;
+
+}ul > li > input:hover {
+
+	border: 2px solid black;
+
+}ul > li > input:checked {
+
+	border: 6px solid black;
+}
+
+ul > li > label {
+
+	font-style: italic;
+	/*font-size: 1.4vw;*/
+}
+
+textarea {
+
+	border: 1px solid black;
+	width: 25vw;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1em;
+	margin-bottom: 10px;
+}
+
+input[type="submit"]{
+
+	border: 1px solid black;
+	font-size: 1vw;
+	text-align: center;
+	width: 7vw;
+	max-width: 150px;
+	height: auto;
+	border: 1px solid black;
+	padding: 0.2em 0.5em;
+	font-weight: bold;
+	font-style: default;
+	cursor:  pointer;
+	/*display: block;*/
+	margin-left: 0;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	transition: transform 1s;
+
+}input[type="submit"]:hover{
+
+	transform: scale(0.95);
+	background-color: white;
+
+}
+
+.services {
+
+	margin-top: 1em;
+}
+
+form > div > div> label {
+
+	font-style: italic;
+	font-weight: default;
+}

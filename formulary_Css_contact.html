@@ -21,6 +21,9 @@ un check para aceptar los términos y servicios que esté marcado por defecto, u
     <meta charset="UTF-8">
     <meta name="author" content="Artsiom Krautsou Kharlap // Grupo 4">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./formulary.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -47,61 +50,76 @@ un check para aceptar los términos y servicios que esté marcado por defecto, u
 
 <form>
 
-    <div>
-        <label>Nombre</label>
-        <input type="text" name="contact_name" required>
+    <div class="formulary">
 
-        <label>Apellidos</label>
-        <input type="text" name="contacto_sname" required>
+        <label class="form__name">Nombre</label>
+        <div class="icon__imput">
+          <i class="fa fa-user icon"></i>
+          <input class="form__input" type="text" placeholder="Nombre" name="Nombre" maxlength="12"required>
+        </div>
+
+        <label class="form__name">Apellidos</label>
+        <div class="icon__imput">
+          <i class="fa fa-user icon"></i>
+          <input class="form__input" type="text" placeholder="Apellidos" name='Apellidos' maxlength="24"required>
+        </div>
         
-        <label>Teléfono</label>
-        <input type="tel" name="contacto_pnumber" pattern="0-9]{3}[0-9]{3}[0-9]{3}"maxlength="9" required>
+        <label class="form__name">Teléfono</label>
+        <div class="icon__imput">
+          <i class="fa fa-phone-square"></i>
+          <input class="form__input" type="tel" placeholder="+34 ..." name="Teléfono" maxlength="9" required>
+        </div>
 
-        <label>Correo Electronico</label>
-        <input type="email" name="contacto_email" required>
+        <label class="form__name">Email</label>
+        <div class="icon__imput">
+          <i class="fa fa-envelope icon"></i>
+          <input class="form__input" type="Email" placeholder="example@mail" name= 'Email' maxlength="30"required>
+        </div>
+  
 
-    </div>
-
-    <div>
-        <label>Elija el servicio que desea</label>
-        <select name="contact_service" required>
-
-            <option value="0"></option>
-            <option value="Mount">Montaje</option>
-            <option value="SW">Software</option>
-            <option value="ATT">Atencion al cliente</option>
-
-        </select>
-    </div>
+        <label class="form__name">Elija el servicio</label>
+        <div class="icon__imput">
+            <select class="form__select" name="contact_service" required>
+                <option disabled selected></option>
+                <option>Montaje</option>
+                <option>Software</option>
+                <option>Atencion al cliente</option>
+            </select>
+        </div>
     
-    <div>
-        <p>Elija su sexo</p>      
-        <input type="radio" name="contact_sex" value="Hombre">
-        <label>Hombre</label>
-
-        <input type="radio" name="contact_sex" value="Mujer">
-        <label>Mujer</label>
-
-        <input type="radio" name="contact_sex" value="Otro">
-        <label>Otro</label>
-
-    </div>
-
-    <div>
-        <p>Deje su mensaje</p>                     
-        <textarea name="contact_message" rows="10" cols="30" required></textarea>
+        <div  class="div__sex">
+            <p class="form__name">Elija su sexo</p>    
+            <ul>
+                <li>
+                    <input type="radio" name="contact_sex" value="Hombre">
+                    <label>Hombre</label>
+                </li> 
+                <li>
+                    <input type="radio" name="contact_sex" value="Mujer">
+                    <label>Mujer</label>
+                </li>
+                <li>
+                    <input type="radio" name="contact_sex" value="Otro">
+                    <label>Otro</label>
+                </li>
+            </ul>
+        </div>
+    
         <div>
-
+            <p class="form__name">Deje su mensaje</p>                     
+            <textarea name="contact_message" rows="10" cols="30" required></textarea>
+            <input class="but__del" type="reset" value="Borrar">           
+        </div>
+ 
+        <div class="services">
             <input type="checkbox" checked name="Terminos" value="Acepto" required>
             <label>Acepto los términos y servicios</label>
-
         </div>
 
         <div>
             <input type="submit" value="Enviar">       
-            <input type="reset" value="Borrar"> 
         </div>
-        
+    </div>
     </form>
 
     <!-- ********************************************************************************************************************************************** -->
