@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!--
+STORY 4: PÁGINA CONTACTO 12P
+INTRODUCCIÓN A HTML (CABECERAS, PÁRRAFOS, IMÁGENES, ENLACES, FORMATO DE TEXTO, FORMULARIOS), VALIDACIÓN DE FORMULARIOS CON HTML5, INCLUIR MAPA GOOGLE MAPS
+Crea una página contacto.html que incluya información de contacto para la empresa.
+Esta página debe incluir:
+-Título
+-Párrafo
+-Un formulario de contacto, donde se pida el nombre, el teléfono, el email, una lista desplegable donde pueda elegir el servicio o producto sobre el que quiere hacer la consulta, un radiobutton donde elegir el sexo,
+un check para aceptar los términos y servicios que esté marcado por defecto, un textarea donde pueda escribir el mensaje, un botón enviar y un botón reset.
+-Incluye validación de los campos (HTML5): todos deben ser obligatorios, tener el formato de número...
+-En la parte superior incluye enlaces a la página principal, about us, página de servicios y página de contacto.
+-Actualiza la página de home, about us y servicios para incluir el enlace a la página de contacto.
+-Incluye un mapa de google maps con la dirección
+
+ -->
+<!DOCTYPE html>
+<html lang="es-ES" >
+        <head>
+            <title>PCT4U Contacto</title>
+            <meta charset="UTF-8">
+            <meta name="author" content="Artsiom Krautsou Kharlap // Grupo 4">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </head>
+ <link href="css/estilo.css"rel="stylesheet"/>
+        <body>
+        <header>
+          <table> <!-- Crea una tabla. <th> sirve para declarar la columna; <tr> declararia las columnas-->
+            <th><a href="index.html"> INDICE </a></th>
+            <th><a href="products.html"> PRODUCTOS </a></th>
+            <th><a href="service.html"> SERVICIOS </a></th>
+            <th><a href="about_us.html"> SOBRE NOSOTROS </a></th>
+            <th><a href="contact.html"> CONTACTO </a></th>
+          </table>
+        </header>
+        <hr />                                                                                                          <!--Esto genera una linea debajo de los indices -->
+            <H1>
+                CONTACTO
+            </H1>
+            <hr>                                                                                                   <!--H1 es el Titulo, hay varios tipos del 1 al 4, donde el 1 es el mas grande y 4 el mas chico -->
+            <P>
+                ¿Dudas? Pues envía tu consulta a nuestro departamento de Atención al Cliente.
+            </P>                                                                                                         <!-- La P es de parrafo -->
+            <P>
+                FORMULARIO
+            </P>
+
+            <form>
+                <!-- Este apartado esta para el nombre, <label> le da a esa parte el nombre a esa celda, e input genera la celda para rellenar. -->
+                <label>
+                    Nombre
+                </label>
+                    <br>
+                <input type="text" name="contact_name" required>
+                    <br>
+
+
+                <label>                                                                                 <!--Este apartado para el apellido -->
+                    Apellidos
+                </label>
+                    <br>
+                <input type="text" name="contacto_sname" required>
+                    <br>
+
+
+                <label>                                                                                 <!-- Este para el telefono -->
+                    Telefono
+                </label>
+                    <br>
+                <input type="tel" name="contacto_pnumber" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" maxlength="9" required>
+                    <br>
+
+
+                <label>                                                                                   <!-- Aqui el correo electronico -->
+                    Correo Electronico
+                </label>
+                    <br>
+                <input type="email" name="contacto_email" required>
+                    <br>
+
+
+                <label>                                                                               <!--Esto crea un desplegable para elegir el servicio -->
+                    Elija el servicio que desea
+                </label>
+                    <br>
+                <select name="contact_service" required>
+
+                    <option value="0">
+                    </option>
+
+                    <option value="Mount">
+                        Montaje
+                    </option>
+
+                    <option value="SW">
+                        Software
+                    </option>
+
+                    <option value="ATT">
+                        Atencion al cliente
+                    </option>
+                </select>
+                    <br>
+
+
+                <p>
+                    Elija su sexo
+                </p>                                                                                        <!--Genera los puntos a legir del sexo -->
+                <input type="radio" name="contact_sex" value="Hombre">
+                <label>
+                    Hombre
+                </label>
+                    <br>
+                <input type="radio" name="contact_sex" value="Mujer">
+                <label>
+                    Mujer
+                </label>
+                    <br>
+                <input type="radio" name="contact_sex" value="Otro">
+                <label>
+                    Otro
+                </label>
+                    <br>
+
+
+                <p>
+                    Deje su mensaje
+                </p>                                                                                      <!--Genera un campo de 10 lineas por 30 columnas para texto libre -->
+                <textarea name="contact_message" rows="10" cols="30" required>
+                </textarea>
+                    <br>
+
+
+                <input type="checkbox" checked name="Terminos" value="Acepto" required>                           <!--Genera un boton siempre pulsado para poder pasar -->
+                <label>
+                    Acepto los términos y servicios
+                </label>
+                    <br>
+                    <br>
+
+
+                <input type="submit" value="Enviar">                                                                        <!--Boton de enviar el formulario -->
+                <input type="reset" value="Borrar">                                                                         <!-- Boton de borrado del formulario -->
+            </form>
+
+            <p>
+                Tambien puedes visitarnos en:
+            </p>
+
+                                                                                                     <!-- Este div nos introduce el mapa de la ubicacion -->
+                <div>
+                    <iframe height="300" width="600" src="https://maps.google.com/maps?q=%20Pl.%20Virgen%20Milagrosa,%2011,%2029017%20M%C3%A1laga&t=&z=15&ie=UTF8&iwloc=&output=embed">
+                    </iframe>
+                </div>
+                <hr>
+                <footer>
+            			<h2>Derechos de autor</h2>
+            			<p>PC4T &copy; guarda los derechos de autor de esta web desde el año 2021. Created by Artsiom Krautsou.</p>
+            		</footer>
+        </body>
+    </html>
