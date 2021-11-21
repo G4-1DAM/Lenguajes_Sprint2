@@ -1,0 +1,47 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 2%;
+  width: 100%;
+  background-color: red;
+}
+
+li {
+  padding:2%;
+  text-align: center;
+
+}
+
+li a {
+  color: gold;
+  text-decoration: none;
+}
+
+li:hover {
+  background-color: grey;
+}
+
+@media screen and (min-width: 600px) {
+li {
+  display: inline;
+}
+}
+
+/*Aquí empiezan las columnas*/
+.imagenes {
+    float: left;
+    padding-right: 20px;
+    padding-left: 20px
+}
+
+img {
+    /* Para que sea responsiva */
+    background-color: inherit;
+    width: 150px;
+}
+
+.textoImagen {
+    text-align: center;
+    background-color: black;
+    color: gold;
+}
