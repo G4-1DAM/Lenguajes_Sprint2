@@ -1,0 +1,18 @@
+.imagenes {
+    float: left;
+    width: ;
+    padding-right: 20px;
+    padding-left: 20px
+}
+
+img {
+    /* Para que sea responsiva */
+    background-color: inherit;
+    width: 150px;
+}
+
+p {
+    text-align: center;
+    background-color: black;
+    color: gold;
+}
