@@ -105,32 +105,65 @@ table {
 
 
 /***********ROBERTO******************************************/
+/*Esto es para que el tamaño de la caja sea el real de la caja sin ser
+alterado por los paddings ni los bordes(al menos eso he entendido yo)*/
+* {
+  box-sizing: border-box;
+}
+/*Aquí empieza el código CSS del menú*/
+/*Define el estilo que van a tener los elementos "ul" de la página(margen,
+padding, tamaño y color de fondo)*/
 ul {
   list-style-type: none;
   margin: 0;
   padding: 2%;
   width: 100%;
   background-color: black;
-  text-align: center;
 }
+/*Hace que los botones del menú sean más grandes, según el porciento de
+padding que le pongamos, y que el texto esté alineado en el centro*/
 li {
   padding:2%;
   text-align: center;
 }
+/*Pone el color de las letras en dorado para los enlaces del menú, y
+"text-decoration: none" para que aparezcan los enlaces sin decoración*/
 li a {
   color: gold;
   text-decoration: none;
-
 }
+/*Cuando pasa el ratón por encima de los enlaces, cambia el color de fondo
+a gris*/
 li:hover {
   background-color: grey;
 }
+/*Cuando la pantalla es mayor de 600px, cambia los elementos "li" de estar
+verticales a estar horizontales*/
 @media screen and (min-width: 600px) {
-li {
-  display: inline;
+  li {
+    display: inline;
+  }
 }
+/*Aquí comienza el código CSS de las columnas*/
+/*Define los estilos de las clases "columna"*/
+.columna {
+  float: left;
+  width: 25%;
+  padding: 20px;
 }
-
+/*Define cómo se van a mostrar las columnas dentro de la clase "cajaColumnas"*/
+.cajaColumnas:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*Cuando la pantalla es menor de 600px, cambia las columnas de estar una al
+lado de la otra, a estar una encima de la otra*/
+@media screen and (max-width: 600px) {
+  .columna {
+    width: 100%;
+  }
+}
 /*********DANIEL********************/
 
 /* SLIDE INDEX */
