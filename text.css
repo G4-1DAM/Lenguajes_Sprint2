@@ -86,41 +86,49 @@ a:active {
     color: pink;
     }
 
+/*Modificamos texto en el footer*/
 footer{
     text-decoration: underline solid rgb(68, 68, 68);
     text-shadow: -26px 6px 6px rgba(24,20,164,0.8);
     }
 
+/*en about_us, en el <a> del correo de alvaro*/
 .correo_Alvaro{
     text-decoration: line-through solid rgb(68, 68, 68);
 
     }
 
+/*Aparece en about_us en <p> Disponemos de grandes almacenes...*/
 .negrita{
     font-weight: 800;
 
     }
 
+/*Pone en cursiva en Contacto la primera <P>
 .cursiva{
     font-style: italic;
 
     }
 
+/*Se la ha dado una clase a la <i> que hay dentro del h2 (recogida y entrega)*/
 .uppercase{
     text-transform: capitalize;
 
     }
 
+/*Esto va en Service, es el <ul> que hay despeues del <h2>*/
 .interlineado{
     line-height : 25px;
 
     }
 
+/*va en el <ol> que esta dentro de <p> de ¿Como es el proceso...?*/
 .separacion_letras{
     letter-spacing: 2px;
 
     }
 
+/*esto va en todas las <p> que hay despues del h2 de ¿Quienes somos?*/
 .index{
     text-indent: 20px;
     padding-left: 30px
